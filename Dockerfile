@@ -1,4 +1,4 @@
-# Dockerfile to create the container image for the Currency converter app
+# Dockerfile to create the container image for the Cluster Visualization App (CVA)
 FROM python:3.12
 LABEL maintainer="Alec Hoelscher <alechoelscher@Alecs-MacBook-Pro.com>"
 
@@ -10,13 +10,12 @@ RUN apt-get update && \
 COPY . /133_parking
 RUN pip install --no-cache-dir --upgrade -r /133_parking/requirements.txt
 WORKDIR /133_parking/
-
 EXPOSE 8000
+# prevents Python from writing .pyc files to disk
+# ensures that the python output is sent straight to terminal (e.g. the container log) without being first buffered
 
-#  prevents Python from writing .pyc files to disk
-#  ensures that the python output is sent straight to terminal (e.g. the container log) without being first buffered
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
-ENV PYTHONPATH=/133_parking
+ENV PYTHONPATH=/currency_converter
 
-CMD ["python3.12",  "-m", "streamlit", "run", "--server.port", "8000", "./src/133_parking.py"]
+CMD ["python3.12", "-m", "streamlit", "run", "--server.port", "8000", "./src/133_parking.py"]

@@ -16,7 +16,6 @@ on:
     push:
       branches:
         - main
-        - 'release/*' # Optional: Add other branches you want to trigger the workflow on
 
 jobs:
   publish-docker-image:
