@@ -19,4 +19,4 @@ ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONPATH=/133_parking
 
-CMD ["python3.12",  "-m", "streamlit", "run", "--server.port", "8000", "./133_parking.py"]
+CMD ["python3.12",  "-m", "streamlit", "run", "--server.port", "8000", "133_parking.py"]
