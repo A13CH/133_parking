@@ -19,8 +19,4 @@ ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONPATH=/133_parking
 
-#  playing with the secret key
-ARG SECRET_KEY
-ENV SECRET_KEY=$SECRET_KEY
-
 CMD ["python3.12",  "-m", "streamlit", "run", "--server.port", "8000", "./133_parking.py"]
