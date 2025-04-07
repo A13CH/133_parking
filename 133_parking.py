@@ -59,14 +59,14 @@ while True:
     with status_placeholder.container():
         if DETECTION:
             # Display "Occupied" status with a car image
-            image_placeholder.image("car_occupied.png", use_container_width=True)  # Replace with your car image
+            image_placeholder.image("images/car_occupied.png", use_container_width=True)  # Replace with your car image
             st.markdown(
                 "<h2 style='text-align: center; color: red;'>Occupied</h2>",
                 unsafe_allow_html=True,
             )
         else:
             # Display "Available" status with an empty parking spot image
-            image_placeholder.image("parking_available.png", use_container_width=True)  # Replace with your parking spot image
+            image_placeholder.image("images/parking_available.png", use_container_width=True)  # Replace with your parking spot image
             st.markdown(
                 "<h2 style='text-align: center; color: green;'>Available</h2>",
                 unsafe_allow_html=True,
