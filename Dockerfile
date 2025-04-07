@@ -17,7 +17,7 @@ EXPOSE 8000
 #  ensures that the python output is sent straight to terminal (e.g. the container log) without being first buffered
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
-ENV PYTHONPATH=/currency_converter
+ENV PYTHONPATH=/133_parking
 
 #  playing with the secret key
 ARG SECRET_KEY
