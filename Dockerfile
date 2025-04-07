@@ -23,4 +23,4 @@ ENV STREAMLIT_SERVER_PORT=8000
 ENV STREAMLIT_SERVER_HEADLESS=true
 ENV STREAMLIT_SERVER_ENABLE_CORS=false
 
-CMD ["python3.12",  "-m", "streamlit", "run", "--server.port", "8000", "133_parking.py"]
+CMD ["python3.12",  "-m", "streamlit", "run", "--server.port", "8000", "./src/133_parking.py"]
