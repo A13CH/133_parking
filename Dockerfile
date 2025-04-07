@@ -16,6 +16,6 @@ EXPOSE 8000
 
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
-ENV PYTHONPATH=/currency_converter
+ENV PYTHONPATH=/133_parking
 
 CMD ["python3.12", "-m", "streamlit", "run", "--server.port", "8000", "./src/133_parking.py"]
