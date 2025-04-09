@@ -102,4 +102,4 @@ while True:
                 "<h2 style='text-align: center; color: green;'>Available</h2>",
                 unsafe_allow_html=True,
             )
-    time.sleep(3)  # Add a delay to avoid excessive CPU usage
+    time.sleep(1)  # Add a delay to avoid excessive CPU usage
